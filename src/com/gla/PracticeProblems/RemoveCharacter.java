@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 
 public class RemoveCharacter {
@@ -25,3 +26,32 @@ public class RemoveCharacter {
         sc.close();
     }
 }
+=======
+import java.util.Scanner;
+
+public class RemoveCharacter {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter string: ");
+        String s = sc.nextLine();
+
+        System.out.print("Enter character to remove: ");
+        char ch = sc.next().charAt(0);
+
+        String result = "";
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if (s.charAt(i) != ch)
+                result += s.charAt(i);
+        }
+
+        System.out.println("Modified String: " + result);
+
+        sc.close();
+    }
+}
+>>>>>>> 312c94086bb55094d0100ade10577c4b7f1241de
